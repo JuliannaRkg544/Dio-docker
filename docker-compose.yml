@@ -1,0 +1,9 @@
+services:
+  apache:
+    image: httpd:latest
+    container_name: login_app
+    ports:
+    - '3000:3000'
+    volumes:
+    - ./projeto-login:/usr/local/apache2/htdocs
+
